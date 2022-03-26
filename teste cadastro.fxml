@@ -4,12 +4,10 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -20,28 +18,13 @@
           <Tab text="Cadastro">
                <content>
                   <ListView prefHeight="200.0" prefWidth="200.0" />
-               </content>
-               <graphic>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-               </graphic></Tab>
-          <Tab text="Bronze">
-               <content>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-               </content>
-               <graphic>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-               </graphic></Tab>
-            <Tab text="Silver">
-               <content>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                </content></Tab>
+          <Tab text="Bronze" />
+            <Tab text="Silver" />
             <Tab text="Gold" />
         </tabs>
       </TabPane>
-      <Button layoutX="640.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button">
-         <graphic>
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
-         </graphic></Button>
+      <Button layoutX="640.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button" />
       <Button layoutX="692.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button" />
       <Button layoutX="588.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
       <Button layoutX="536.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
@@ -61,6 +44,5 @@
             <Image url="@lixeira-main/profile_image_plus_round%20%5B%231327%5D.png" />
          </image>
       </ImageView>
-      <Text layoutX="530.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
    </children>
 </AnchorPane>

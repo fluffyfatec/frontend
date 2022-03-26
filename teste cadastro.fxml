@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.AutoCompleteTextField?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button focusTraversable="false" layoutX="434.0" layoutY="2.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: ligth blue; -fx-border-color: GREY;" text="A" visible="false" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0539b133" height="48.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="746.0" />
-      <TabPane layoutY="48.0" prefHeight="418.0" prefWidth="746.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab text="Cadastro">
-               <content>
-                  <ListView prefHeight="200.0" prefWidth="200.0" />
-               </content></Tab>
-          <Tab text="Bronze" />
-            <Tab text="Silver" />
-            <Tab text="Gold" />
-        </tabs>
-      </TabPane>
-      <Button layoutX="640.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button" />
-      <Button layoutX="692.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button" />
-      <Button layoutX="588.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
-      <Button layoutX="536.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
-      <Button layoutX="484.0" layoutY="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: transparent; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
+      <Button layoutX="640.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button" />
+      <Button layoutX="692.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" text="Button" />
+      <Button layoutX="588.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
+      <Button layoutX="536.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: #C70039; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
+      <Button layoutX="484.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-focus-color: pink; -fx-focus-color: #C70039; -fx-focus-border-color: transparent; -fx-background-radius: 10; -fx-focus-background-color: #7e88d8; -fx-focus-color: #7e88d8;" />
       <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="495.0" layoutY="10.0">
          <image>
             <Image url="@lixeira-main/arrow_left%20%5B%23335%5D.png" />
@@ -44,5 +36,41 @@
             <Image url="@lixeira-main/profile_image_plus_round%20%5B%231327%5D.png" />
          </image>
       </ImageView>
+      <TabPane layoutX="1.0" layoutY="48.0" prefHeight="223.0" prefWidth="746.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="746.0">
+                     <children>
+                        <Text layoutX="36.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+                        <AutoCompleteTextField layoutX="78.0" layoutY="22.0" prefHeight="26.0" prefWidth="273.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="394.79999999999995" />
+                        <Text layoutX="36.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ" />
+                        <AutoCompleteTextField layoutX="78.0" layoutY="60.0" prefHeight="26.0" prefWidth="273.0" />
+                        <SplitMenuButton layoutX="36.0" layoutY="105.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" text="Setor">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </SplitMenuButton>
+                        <SplitMenuButton layoutX="205.0" layoutY="105.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" text="Core">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </SplitMenuButton>
+                        <Text layoutX="393.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text layoutX="409.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivo do negócio" />
+                        <TextArea layoutX="409.0" layoutY="37.0" prefHeight="39.0" prefWidth="298.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>

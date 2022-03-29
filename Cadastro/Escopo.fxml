@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutX="-5.0" layoutY="-6.0" stroke="WHITE" strokeType="INSIDE" width="1306.0" />
+      <GridPane layoutX="-2.0" layoutY="3.0" prefHeight="50.0" prefWidth="230.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button id="bt_novo" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" mouseTransparent="true" onAction="#btnLimpar" style="-fx-background-color: #1c1c1c;" styleClass="css_bt1" textAlignment="CENTER" textFill="#08b5f4" textOverrun="CLIP">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Lucida Bright Italic" size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@apagar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" style="-fx-background-color: #1c1c1c;" styleClass="css_bt1" textAlignment="CENTER" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@cadastrar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #1c1c1c;" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@atualizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #1c1c1c;" styleClass="css_bt1" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@pesquisar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #1c1c1c;" styleClass="css_bt1" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets left="5.0" />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@comentar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <TabPane layoutY="53.0" prefHeight="696.0" prefWidth="1300.0" stylesheets="@../Desktop/ChangeColor.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-text-base-color: white; -fx-background-color: #1c1c1c;" text="Geral">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1c1c1c;">
+                     <children>
+                        <Text fill="WHITE" layoutX="67.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+                        <TextField layoutX="67.0" layoutY="94.0" prefHeight="26.0" prefWidth="512.0" />
+                        <Text fill="WHITE" layoutX="67.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ" />
+                        <TextField layoutX="67.0" layoutY="167.0" prefHeight="26.0" prefWidth="510.0" />
+                        <CheckBox layoutX="705.0" layoutY="134.0" mnemonicParsing="false" text="Vox" textFill="WHITE" />
+                        <CheckBox layoutX="705.0" layoutY="158.0" mnemonicParsing="false" text="Marketing &amp; Planning" textFill="WHITE" />
+                        <SplitMenuButton layoutX="705.0" layoutY="94.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="265.0" text="Solução">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Nxt.Demand" />
+                            <MenuItem mnemonicParsing="false" text="Nxt.Operations" />
+                          </items>
+                        </SplitMenuButton>
+                        <CheckBox layoutX="705.0" layoutY="181.0" mnemonicParsing="false" text="Sales" textFill="WHITE" />
+                        <CheckBox layoutX="705.0" layoutY="203.0" mnemonicParsing="false" text="Distribution" textFill="WHITE" />
+                        <CheckBox layoutX="705.0" layoutY="227.0" mnemonicParsing="false" text="Pricing" textFill="WHITE" />
+                        <CheckBox layoutX="863.0" layoutY="158.0" mnemonicParsing="false" text="Optimization" textFill="WHITE" />
+                        <CheckBox layoutX="863.0" layoutY="134.0" mnemonicParsing="false" text="Matching &amp; Risk" textFill="WHITE" />
+                        <TextArea layoutX="67.0" layoutY="235.0" prefHeight="82.0" prefWidth="510.0" />
+                        <TextArea layoutX="67.0" layoutY="376.0" prefHeight="82.0" prefWidth="510.0" />
+                        <TextArea layoutX="67.0" layoutY="516.0" prefHeight="82.0" prefWidth="510.0" />
+                        <Text fill="WHITE" layoutX="67.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivo do Negócio" />
+                        <Text fill="WHITE" layoutX="68.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entregaveis Mínimos" />
+                        <Text fill="WHITE" layoutX="66.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entregaveis Possíveis" />
+                        <SplitMenuButton layoutX="705.0" layoutY="276.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="265.0" text="Core">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Webapp" />
+                              <MenuItem mnemonicParsing="false" text="API" />
+                              <MenuItem mnemonicParsing="false" text="Gateway" />
+                              <MenuItem mnemonicParsing="false" text="Filas" />
+                              <MenuItem mnemonicParsing="false" text="Step" />
+                              <MenuItem mnemonicParsing="false" text="Function" />
+                              <MenuItem mnemonicParsing="false" text="Lambda" />
+                              <MenuItem mnemonicParsing="false" text="Fargate" />
+                              <MenuItem mnemonicParsing="false" text="Containers" />
+                              <MenuItem mnemonicParsing="false" text="S3" />
+                              <MenuItem mnemonicParsing="false" text="Mongodb" />
+                              <MenuItem mnemonicParsing="false" text="Parquet" />
+                              <MenuItem mnemonicParsing="false" text="Quicksight" />
+                              <MenuItem mnemonicParsing="false" text="Cloudwatch" />
+                           </items>
+                        </SplitMenuButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: #1c1c1c; -fx-text-base-color: white;" text="Bronze">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="538.0" style="-fx-background-color: #1c1c1c;" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

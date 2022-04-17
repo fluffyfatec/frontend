@@ -1,2 +1,0 @@
-# frontend
-Pasta de arquivos
